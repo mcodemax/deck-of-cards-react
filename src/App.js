@@ -5,7 +5,7 @@ import CardDisplay from './CardDisplay';
 function App() {
   return (
     <div className="App">
-     
+     <CardDisplay/>
     </div>
   );
 }
