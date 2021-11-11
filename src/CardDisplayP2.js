@@ -3,7 +3,7 @@ import axios from "axios";
 import Card from "./Card";
 // import { v4 as uuid } from 'uuid';
 
-const CardDisplay = () => {
+const CardDisplayP2 = () => {
     const [cards, setCards] = useState([]); //this in an obj {code, deck_id}
     const [deckId, setDeckId] = useState(null);
   
@@ -43,7 +43,7 @@ const CardDisplay = () => {
     };
   
     return (
-        <div className="CardDisplay">
+        <div className="CardDisplayP2">
      
             <Card image={cards[cards.length - 1]}/>
             <button onClick={drawCard}>Draw a Card</button>
@@ -53,4 +53,4 @@ const CardDisplay = () => {
     );
 };
 
-export default CardDisplay;
+export default CardDisplayP2;
