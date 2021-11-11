@@ -44,11 +44,12 @@ const CardDisplay = () => {
   
     return (
         <div className="CardDisplay">
-      //
+     
             <Card image={cards[cards.length - 1]}/>
             <button onClick={drawCard}>Draw a Card</button>
         </div>
-        // remove box does nothing right now
+        
+        //for part2 maybe do something like: if { deckId && <button onClick={drawCard}>Draw a Card</button> }
     );
 };
 
