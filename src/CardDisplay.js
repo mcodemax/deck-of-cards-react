@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "./Card";
-// import { v4 as uuid } from 'uuid';
+
 
 const CardDisplay = () => {
-    const [cards, setCards] = useState([]); //this in an obj {code, deck_id}
+    const [cards, setCards] = useState([]); //future implementation: this in an obj {code/image, rotational position}
     const [deckId, setDeckId] = useState(null);
   
     useEffect(() => {
@@ -51,7 +51,6 @@ const CardDisplay = () => {
             <button onClick={drawCard}>Draw a Card</button>
         </div>
         
-        //for part2 maybe do something like: if { deckId && <button onClick={drawCard}>Draw a Card</button> }
     );
 };
 
